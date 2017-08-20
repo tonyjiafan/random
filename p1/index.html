@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="charset" content="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1.0,user-scalable=0">
+     <!-- 去除安卓IOS的电话号码转换问题 -->
+    <meta content="telephone=no" name="format-detection">
+    <title>Movie</title>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script type="text/javascript">
+  //计算rem整体布局
+        (function (doc, win) {
+             var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+              var recalc = function () {
+                   var clientWidth = docEl.clientWidth;
+                   if (! clientWidth) return;
+                         var fontSize = 20 * (clientWidth / 320);
+                         if(fontSize> 33.75) fontSize = 33.75;
+                        docEl.style.fontSize = fontSize + 'px';
+            };
+             if (! doc.addEventListener) return;
+            recalc();
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false );
+      })(document, window);
+ </script>
+</html>
