@@ -2,6 +2,18 @@
 
 > A Vue.js project
 
+
+
+### 预览
+
+<img width="200px" src="https://github.com/tonyjiafan/random/blob/master/p1/img/1.PNG" />
+
+
+
+<img width="200px" src="https://github.com/tonyjiafan/random/blob/master/p1/img/2.PNG" />
+
+
+
 ## Build Setup
 
 ``` bash
