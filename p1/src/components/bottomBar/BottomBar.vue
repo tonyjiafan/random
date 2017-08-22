@@ -1,6 +1,6 @@
 <template>
-  <div class="NextOne" v-loading.fullscreen.lock="loading" element-loading-text="加载中">
-    <h5 class="h5-title">建设中...</h5>
+  <div class="BottomBar" v-loading.fullscreen.lock="loading" element-loading-text="加载中">
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import axios from 'axios'
 import router from '../../router'
 export default {
-  name: 'home',
+  name: 'bottomBar',
   data() {
     return {
       loading: true
@@ -34,15 +34,12 @@ export default {
 
 
 <style scoped lang="scss">
-.NextOne{
+.BottomBar{
   width: 100%;
   text-align: center;
+  padding-bottom: 100px;
   // height: 20rem;
   // background: yellow;
-  .h5-title{
-    margin: 60px auto;
-    color: #fc5144;
-  }
 }
 
 </style>

@@ -1,5 +1,9 @@
 <template>
   <div class="Index" v-loading.fullscreen.lock="loading" element-loading-text="加载中">
+    <h5>我是 /one 的form组件</h5>
+    <router-link to="/home">
+      <span class="go-home">主页</span>
+    </router-link>
     <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
       <el-form-item label="活动名称" prop="name">
         <el-input v-model="ruleForm.name"></el-input>
@@ -132,6 +136,15 @@ export default {
   text-align: center;
   // height: 20rem;
   // background: yellow;
+  .go-home{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 15px;
+    background: #fc5144;
+    border-radius: 4px;
+    margin: 10px auto;
+  }
 }
 
 </style>

@@ -3,12 +3,12 @@
     <div class="Main">
       <router-view></router-view>
       <div class="footer-bar">
-        <router-link to="/nextOne/1">
+        <router-link to="/one">
           <div class="left-button">
             <i class="el-icon-menu"></i>
           </div>
         </router-link>
-        <router-link to="/nextOne/2">
+        <router-link to="/two">
           <div class="right-button">
             <i class="el-icon-setting"></i>
           </div>
