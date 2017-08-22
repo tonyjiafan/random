@@ -209,7 +209,7 @@ export default {
         position: absolute;
         bottom:0px;
         right: 80px;
-        color: #FF9900;
+        color: rgba(241, 66, 126, 0.79);
       }
     }
     /* 弹框 */
