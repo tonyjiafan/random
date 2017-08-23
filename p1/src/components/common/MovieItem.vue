@@ -1,5 +1,8 @@
 <template>
     <div class="movie-item">
+      <div class="movie-message" v-if="news.length == 0">
+        <i class="el-icon-loading"></i>&nbsp;努力加载中...
+      </div>
       <el-row v-for="(item,index) in news" :key="index" style="border-bottom: 1px solid #c9c7c7;">
          <el-col :xs="8" :sm="6" :md="4" :lg="3"><div class="grid-content bg-purple"><img :src="item.image" style="width:100px;height:auto;" alt="" /></div></el-col>
          <el-col :xs="16" :sm="18" :md="20" :lg="21">
@@ -71,6 +74,12 @@ export default {
 <style scoped lang="scss">
   .movie-item{
     // outline: 1px solid red;
+    .movie-message{
+      color: #999;
+      text-align: center;
+      font-size: 16px;
+      margin: 50px auto;
+    }
     .author-warp{
       padding-left: 2px;
       font-size: 14px;

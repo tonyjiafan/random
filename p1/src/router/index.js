@@ -28,8 +28,8 @@ export default new Router({
       name: 'bottomBar',
       component: BottomBar,
       children: [
-        {path: '/one', name: 'form', component: Form},
-        {path: '/two', name: 'nextOne', component: Setting}
+        {path: '/bottom/one', name: 'form', component: Form},
+        {path: '/bottom/two', name: 'nextOne', component: Setting}
       ]
     }
   ]
