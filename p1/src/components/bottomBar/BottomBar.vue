@@ -1,5 +1,6 @@
 <template>
   <div class="BottomBar" v-loading.fullscreen.lock="loading" element-loading-text="加载中">
+    <h5 class="h5-title">我是bottombar</h5>
     <router-view></router-view>
   </div>
 </template>
@@ -40,6 +41,11 @@ export default {
   padding-bottom: 100px;
   // height: 20rem;
   // background: yellow;
+  .h5-title{
+    background: #01aef2;
+    font-size: 12px;
+    color: #fff;
+  }
 }
 
 </style>
